@@ -1,0 +1,16 @@
+title: Y-Axis Does Not Start at Zero
+description: |
+  By not setting the y-axis at zero, this can make slight changes in the dependent variable looking bigger than they are.
+
+bad_example:
+  code: antipatterns/somethingbad.R
+  image: antipatterns/bad.png
+good_example:
+  code: antipatterns/somethingood.R
+  image: antipatterns/good.png
+
+sins:
+  - misleading
+charttypes:
+  - bar
+  - line

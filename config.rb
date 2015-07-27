@@ -18,12 +18,12 @@ set :layout, :page
 
 
 
-data.datasets.each_pair do |slug, hsh|
-  puts slug
-  dataset = DanSchema::Dataset.new(hsh)
-  proxy "/datasets/#{slug}", "/templates/dataset.html", :locals => { :dataset => dataset},
-  :dynamic_page => {title: dataset.title, description: dataset.description }
-end
+# data.datasets.each_pair do |slug, hsh|
+#   puts slug
+#   dataset = DanSchema::Dataset.new(hsh)
+#   proxy "/datasets/#{slug}", "/templates/dataset.html", :locals => { :dataset => dataset},
+#   :dynamic_page => {title: dataset.title, description: dataset.description }
+# end
 
 
 # Build-specific configuration
